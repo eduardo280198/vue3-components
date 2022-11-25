@@ -4,10 +4,12 @@
     const counter = ref(0);
 
     const increment = () => counter.value++;
+
+    defineProps(['texto']);
 </script>
 
 <template>
-    <button @click="increment">Counter {{counter}}</button>
+    <button @click="increment">{{texto}} {{counter}}</button>
 </template>
 
 <style></style>
