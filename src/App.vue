@@ -8,11 +8,27 @@
   <div class="container">
     <h1>APP</h1>
     
-    <ButtonCounter texto="Contador 1:"></ButtonCounter>
-    <button-counter texto="Contador 2:"></button-counter>
+    <ButtonCounter texto="Counter 1:"></ButtonCounter>
+    <button-counter texto="Counter 2:"></button-counter>
 
-    <BlogPost title="Post 1"></BlogPost>
-    <BlogPost title="Post 2"></BlogPost>
-    <BlogPost title="Post 3"></BlogPost>
+    <BlogPost
+      title="Post 1"
+      id="1" body="Descripción 1"
+      colorText="primary">
+    </BlogPost>
+    
+    <BlogPost
+      title="Post 2"
+      id="2"
+      body="Descripción 2"
+      colorText="secondary">
+    </BlogPost>
+
+    <BlogPost
+      title="Post 3"
+      id="3"
+      body="Descripción 3"
+      colorText="sucess">
+    </BlogPost>
   </div>
 </template>
