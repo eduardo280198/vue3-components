@@ -9,6 +9,10 @@
             default: "Sin descripción",
         },
     });
+
+    const emit =defineEmits(['cambiarFavoritoPropiedad']);
+
+    //emit('cambiarFavoritoPropiedad', title) <- Es mas controlable y puede ser llamado dentro de script
 </script>
 
 <template>
@@ -20,7 +24,7 @@
             <p>{{body}}</p>
 
             <button
-                @click="$emit('cambiarFavorito', title)"
+                @click="emit('cambiarFavoritoPropiedad', title)"
                 class="btn btn-outline-primary"
             >Favorito</button>
         </div>
