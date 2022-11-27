@@ -13,22 +13,25 @@
 
     <BlogPost
       title="Post 1"
-      id="1" body="Descripción 1"
-      colorText="primary">
+      :id="1" 
+      body="Descripción 1">
     </BlogPost>
     
     <BlogPost
       title="Post 2"
-      id="2"
-      body="Descripción 2"
-      colorText="secondary">
+      :id="2"
+      body="Descripción 2">
     </BlogPost>
 
     <BlogPost
       title="Post 3"
-      id="3"
-      body="Descripción 3"
-      colorText="sucess">
+      :id="3"
+      body="Descripción 3">
+    </BlogPost>
+
+    <BlogPost
+      title="Post 4"
+      :id="4">
     </BlogPost>
   </div>
 </template>

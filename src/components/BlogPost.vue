@@ -1,5 +1,14 @@
 <script setup>
-    defineProps(['title', 'id', 'body', 'colorText']);
+    // defineProps(['title', 'id', 'body']);
+
+    defineProps({
+        title: String,
+        id: Number,
+        body:{
+            type: String,
+            default: "Sin descripción",
+        },
+    });
 </script>
 
 <template>
@@ -7,7 +16,6 @@
         <div class="card-body">
             <h5 
                 class="card-title"
-                :class="`text-${colorText}`"
             >{{id}} - {{title}}</h5>
             <p>{{body}}</p>
         </div>
