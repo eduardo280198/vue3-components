@@ -31,7 +31,7 @@
       :title="post.title"
       :id="post.id" 
       :body="post.body"
-      @cambiarFavoritoPropiedad="cambiarFavorito">
+      :cambiarFavorito="cambiarFavorito">
     </BlogPost>
   </div>
 </template>

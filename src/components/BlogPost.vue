@@ -8,9 +8,10 @@
             type: String,
             default: "Sin descripción",
         },
+        cambiarFavorito: Function,
     });
 
-    const emit =defineEmits(['cambiarFavoritoPropiedad']);
+    // const emit = defineEmits(['cambiarFavoritoPropiedad']);
 
     //emit('cambiarFavoritoPropiedad', title) <- Es mas controlable y puede ser llamado dentro de script
 </script>
@@ -24,7 +25,7 @@
             <p>{{body}}</p>
 
             <button
-                @click="emit('cambiarFavoritoPropiedad', title)"
+                @click="cambiarFavorito(title)"
                 class="btn btn-outline-primary"
             >Favorito</button>
         </div>
